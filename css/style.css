@@ -1,0 +1,335 @@
+            @font-face {
+                font-family: "Rubik";
+                src: url('../fonts/Rubik.ttf');
+            }
+            
+            @font-face {
+                font-family: "Publico";
+                src: url('../fonts/Publico.ttf');
+            }
+            
+            * {
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: normal;
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            
+             :root {
+                --padding: 5px 50px;
+            }
+            
+            select {
+                -moz-appearance: none;
+                -webkit-appearance: none;
+            }
+            
+            select::-ms-expand {
+                display: none;
+            }
+            
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+                -webkit-box-shadow: 0 0 0 30px white inset !important;
+            }
+            
+            body {
+                background-color: #E5E5E5;
+                width: 100%;
+                height: 100%;
+            }
+            /* START OF HEADER */
+            
+            #header {
+                width: 100%;
+                height: max-content;
+                background-color: #FFF;
+                padding: var(--padding);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            #header #navbar {
+                display: flex;
+                align-items: center;
+            }
+            
+            #header #navbar img {
+                margin-right: 80px;
+            }
+            
+            #header #navbar .nav-item {
+                font-size: 14px;
+                line-height: 17px;
+                color: #4B4D4F;
+                cursor: pointer;
+                margin: 0px 20px;
+            }
+            
+            #header #navbar .active {
+                color: #323BD3;
+            }
+            
+            #header #right-buttons {
+                display: flex;
+                align-items: center;
+            }
+            
+            #header #right-buttons #login {
+                margin-right: 40px;
+                color: #DC6814;
+                cursor: pointer;
+            }
+            
+            #header #right-buttons #login:hover {
+                color: #F3862A;
+            }
+            
+            #header #right-buttons #register {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 140px;
+                height: 40px;
+                background-color: #F17419;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+            }
+            
+            #header #right-buttons #register:hover {
+                background-color: #F3862A;
+            }
+            /* END OF HEADER */
+            
+            #content {
+                width: 100%;
+                height: max-content;
+                background-color: #FFF;
+                padding-bottom: 250px;
+            }
+            
+            #content #quotation {
+                display: flex;
+                width: 100%;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #content #quotation #quotation-content {
+                left: 0px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                padding: 0px 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #content #quotation #quotation-content #quote-text {
+                color: white;
+                margin-top: -110px;
+                width: 350px;
+            }
+            
+            #content #quotation #quotation-content #quote-text h3 {
+                font-family: Publico;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 5px;
+            }
+            
+            #content #quotation #quotation-content #quote-text p {
+                font-size: 17px;
+                line-height: 22px;
+                color: #FFFFFF;
+                opacity: 0.7;
+            }
+            
+            #content #quotation #quotation-content #quote-form {
+                padding: 50px 30px;
+                background-color: rgba(0, 0, 0, 0.4);
+                border-radius: 20px;
+                width: 400px;
+                box-sizing: content-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            #content #quotation #quotation-content #quote-form h5 {
+                font-weight: 500;
+                font-size: 19.5px;
+                line-height: 25px;
+                color: #FFF;
+            }
+            
+            #content #quotation #quotation-content #quote-form p {
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: #E2E0DF;
+                margin-bottom: 15px;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row {
+                width: 100%;
+                height: 45px;
+                border-radius: 4px;
+                margin: 5px 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .form-group {
+                width: 47.5%;
+                background-color: #fff;
+                border-radius: 4px;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                padding: 2px 7px;
+                position: relative;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .select-group {
+                width: 47.5%;
+                background-color: #fff;
+                border-radius: 4px;
+                height: 45px;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .select-group .select-form-group {
+                width: 100%;
+                background-color: #fff;
+                border-radius: 4px;
+                height: 45px;
+                display: flex;
+                padding: 2px 7px;
+                flex-direction: column;
+                position: absolute;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .select-group i {
+                font-size: 16px;
+                position: absolute;
+                right: 5px;
+                margin: 13px 0px;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .form-group label {
+                font-size: 13px;
+                line-height: 17px;
+                color: #9B9B9B;
+                height: 41px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1px;
+                z-index: +1;
+                position: absolute;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .form-group input {
+                height: 25.5px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                line-height: 19px;
+                color: #232628;
+                top: 12.5px;
+                position: relative;
+                z-index: +1;
+                background-color: transparent;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .select-group .select-form-group label {
+                font-size: 13px;
+                line-height: 17px;
+                color: #9B9B9B;
+                height: 17.5px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1px;
+                z-index: +1;
+                position: absolute;
+            }
+            
+            #content #quotation #quotation-content #quote-form .form-row .select-group .select-form-group select {
+                height: 25.5px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                line-height: 19px;
+                color: #232628;
+                top: 15px;
+                position: relative;
+                z-index: +1;
+                background-color: transparent;
+            }
+            
+            #content #quotation #quotation-content #quote-form .quote-button {
+                width: 100%;
+                height: 45px;
+                border-radius: 4px;
+                margin: 5px 0px;
+                background-color: #173797;
+                font-weight: 500;
+                font-size: 17px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            
+            #content #quotation #quotation-content #quote-form .quote-button:hover {
+                background-color: #2949A9;
+            }
+            
+            #content #quotation #quotation-content #quote-form .terms {
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+                color: #999999;
+                opacity: 0.6;
+            }
+            
+            @keyframes fadeUp {
+                from {
+                    height: 41px;
+                }
+                to {
+                    height: 17.5px;
+                }
+            }
+            
+            @keyframes fadeDown {
+                from {
+                    height: 17.5px;
+                }
+                to {
+                    height: 41px;
+                }
+            }
+            
+            #footer {
+                width: 100%;
+                height: 70px;
+                background-color: #FFF;
+                padding: var(--padding);
+            }

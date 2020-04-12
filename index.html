@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/script.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+
+    <!-- START OF HEADER -->
+    <div id='header'>
+        <div id='navbar'>
+            <img src='img/logo.png' width="140px">
+            <div class='nav-item active'>
+                HOME
+            </div>
+            <div class='nav-item'>
+                DEAL OF DAY
+            </div>
+            <div class='nav-item'>
+                ABOUT
+            </div>
+            <div class='nav-item'>
+                CONTACT
+            </div>
+        </div>
+        <div id='right-buttons'>
+            <div id='login'>
+                LOGIN
+            </div>
+            <div id='register'>
+                REGISTER
+            </div>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+
+    <!-- START OF CONTENT -->
+    <div id='content'>
+        <div id='quotation'>
+            <img src='/img/quote.png' style="width: 100%;">
+            <div id='quotation-content'>
+                <div id='quote-text'>
+                    <h3>Get paid for your property within 48 hours...</h3>
+                    <p>Free valuation and quick payout</p>
+                </div>
+                <div id='quote-form'>
+                    <h5 id='location'>Sell a property in Abuja</h5>
+                    <p>We keep you in the loop all the way.</p>
+                    <div class='form-row'>
+                        <div class='select-group'>
+                            <div class='select-form-group'>
+                                <label for='prop-location' id='label-prop-location'>Property Location</label>
+                                <select id='prop-location' onchange="document.getElementById('location').innerText = 'Sell a property in '+this.value;">
+                                    <option>Abuja</option>
+                                    <option>Enugu</option>
+                                    <option>Lagos</option>
+                                </select>
+                            </div>
+                            <i class='material-icons'>keyboard_arrow_down</i>
+                        </div>
+                        <div class='select-group'>
+                            <div class='select-form-group'>
+                                <label for='prop-lga' id='label-prop-lga'>Property LGA</label>
+                                <select id='prop-lga'>
+                                    <option>Asokoro</option>
+                                    <option>Gwagalada</option>
+                                    <option>Utako</option>
+                                </select>
+                            </div>
+                            <i class='material-icons'>keyboard_arrow_down</i>
+                        </div>
+                    </div>
+                    <div class='form-row'>
+                        <div class='select-group'>
+                            <div class='select-form-group'>
+                                <label for='prop-type' id='label-prop-type'>Property Type</label>
+                                <select id='prop-type'>
+                                    <option>Residential</option>
+                                </select>
+                            </div>
+                            <i class='material-icons'>keyboard_arrow_down</i>
+                        </div>
+                        <div class='form-group' onclick='giveFocus("phone")'>
+                            <label for='phone' id='label-phone'>Phone Number</label>
+                            <input id='phone' type='tel' onblur="removeFocus()">
+                        </div>
+                    </div>
+                    <div class='form-row'>
+                        <div style='width: 100%;' onclick='giveFocus("email")' class='form-group'>
+                            <label for='email' id='label-email'>Email</label>
+                            <input id='email' type='email' onblur="removeFocus()">
+                        </div>
+                    </div>
+                    <div class='quote-button'>
+                        GET QUOTATION
+                    </div>
+                    <div class='terms'>
+                        We understand the prices of properties in the market are sometimes over priced or fictitious, so our valuation estimate is just a guide and an estimation
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='steps'>
+
+        </div>
+    </div>
+    <!-- START OF CONTENT -->
+
+
+    <!-- START OF FOOTER -->
+    <div id='footer'>
+
+    </div>
+    <!-- START OF FOOTER -->
+</body>
+
+</html>
