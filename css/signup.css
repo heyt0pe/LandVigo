@@ -102,7 +102,7 @@ body {
     width: 90%;
     margin: 10px 0px;
     max-width: 400px;
-    height: 43px;
+    min-height: 43px;
     border: 2px solid #E0E4EF;
     border-radius: 4px;
     background-color: transparent;
@@ -130,7 +130,7 @@ body {
     width: 90%;
     margin-top: 10px;
     max-width: 400px;
-    height: 43px;
+    min-height: 43px;
     border: 2px solid #E0E4EF;
     border-radius: 4px;
     padding: 0px 15px;
@@ -141,7 +141,7 @@ body {
 
 #page-content #content #password-field input[type='password'] {
     flex: 1;
-    height: 43px;
+    min-height: 43px;
     border: none;
     background-color: transparent;
     font-size: 16px;
@@ -164,7 +164,7 @@ body {
     width: 90%;
     margin-top: 20px;
     max-width: 400px;
-    height: 43px;
+    min-height: 43px;
     background: #173797;
     border-radius: 4px;
     font-weight: 600;
