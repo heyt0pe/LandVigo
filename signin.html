@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Sign In</title>
+</head>
+
+<body>
+
+    <div id='page-content'>
+        <!-- START OF HEADER -->
+        <div id='header'>
+            <div id='navbar'>
+                <img style="cursor: pointer;" src='img/logo.png' width="140px" onclick="window.location.href='index.html';">
+            </div>
+        </div>
+        <!-- END OF HEADER -->
+
+
+        <!-- START OF CONTENT -->
+        <div id='content'>
+            <h2>Welcome Back</h2>
+            <h6>Sign in to continue</h6>
+            <input type="email" id='email' placeholder="Email">
+            <div class='forgot'>
+                Forgot Password ?
+            </div>
+            <div id='password-field'>
+                <input type="password" id='password' placeholder="Password">
+                <i class="material-icons">visibility_off</i>
+            </div>
+            <div class='primary-btn'>
+                SIGN IN
+            </div>
+            <p>New user? <b onclick="window.location.href='signup.html'">Sign up free</b></p>
+
+        </div>
+        <!-- END OF CONTENT -->
+
+    </div>
+    <img id='dec-img' src='img/signin.png'>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

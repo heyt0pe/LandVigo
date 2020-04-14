@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <div id='page-content'>
+        <!-- START OF HEADER -->
+        <div id='header'>
+            <div id='navbar'>
+                <img style="cursor: pointer;" src='img/logo.png' width="140px" onclick="window.location.href='index.html';">
+            </div>
+        </div>
+        <!-- END OF HEADER -->
+
+
+        <!-- START OF CONTENT -->
+        <div id='content'>
+            <h2>Create an Account</h2>
+            <h6>Sign up to begin</h6>
+            <input type="text" id='name' placeholder="Full Name">
+            <input type="email" id='email' placeholder="Email">
+            <input type="tel" id='tel' placeholder="Phone Number">
+            <div id='password-field'>
+                <input type="password" id='password' placeholder="Password">
+                <i class="material-icons">visibility_off</i>
+            </div>
+            <div class='terms'>By signing up, you agree to the terms and conditions provided by Landvigo</div>
+            <div class='primary-btn'>
+                SIGN UP
+            </div>
+            <p>Exisiting User? <b onclick="window.location.href='signin.html'">Sign in</b></p>
+
+        </div>
+        <!-- END OF CONTENT -->
+
+    </div>
+    <img id='dec-img' src='img/signup.png'>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
