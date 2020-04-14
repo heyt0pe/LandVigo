@@ -19,3 +19,31 @@ function removeFocus() {
         }, 240)
     }
 }
+
+function collapseManager(icon) {
+    icon = document.getElementById(icon);
+    icon.innerText = (icon.innerText == 'keyboard_arrow_down') ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+}
+
+hideText = false;
+
+function getQuotation() {
+    hideText = true;
+    document.getElementById('quote-text').style.display = 'none';
+    document.getElementById('quote-form').style.display = 'flex';
+    document.getElementById('quote-img').style.minHeight = '565px';
+}
+
+responsive = function() {
+    if (window.innerWidth > 825) {
+        document.getElementById('quote-text').style.display = 'block';
+    } else {
+        if (hideText) {
+            document.getElementById('quote-text').style.display = 'none';
+        }
+    }
+}
+
+window.addEventListener("resize", function() {
+    responsive();
+})

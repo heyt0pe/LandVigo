@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="js/script.js"></script>
     <title>Home</title>
 </head>
 
@@ -16,14 +19,14 @@
     <!-- START OF HEADER -->
     <div id='header'>
         <div id='navbar'>
-            <img src='img/logo.png' width="140px">
-            <div class='nav-item active'>
+            <img style="cursor: pointer;" src='img/logo.png' width="140px" onclick="window.location.href='index.html';">
+            <div class='nav-item active' onclick="window.location.href='index.html'">
                 HOME
             </div>
-            <div class='nav-item'>
+            <div class='nav-item' onclick="window.location.href='deal.html'">
                 DEAL OF DAY
             </div>
-            <div class='nav-item'>
+            <div class='nav-item' onclick="window.location.href='privacy.html'">
                 ABOUT
             </div>
             <div class='nav-item'>
@@ -38,6 +41,7 @@
                 REGISTER
             </div>
         </div>
+        <i class='material-icons' id='menu'>menu</i>
     </div>
     <!-- END OF HEADER -->
 
@@ -45,11 +49,14 @@
     <!-- START OF CONTENT -->
     <div id='content'>
         <div id='quotation'>
-            <img src='img/quote.png' style="width: 100%;">
+            <img id='quote-img' src='img/quote.png' style="width: 100%;">
             <div id='quotation-content'>
                 <div id='quote-text'>
                     <h3>Get paid for your property within 48 hours...</h3>
                     <p>Free valuation and quick payout</p>
+                    <div id='quotation-button' onclick='getQuotation()'>
+                        GET QUOTATION
+                    </div>
                 </div>
                 <div id='quote-form'>
                     <h5 id='location'>Sell a property in Abuja</h5>
@@ -79,7 +86,7 @@
                         </div>
                     </div>
                     <div class='form-row'>
-                        <div class='select-group'>
+                        <div class='select-group' style='margin-top: -16px;'>
                             <div class='select-form-group'>
                                 <label for='prop-type' id='label-prop-type'>Property Type</label>
                                 <select id='prop-type'>
@@ -93,13 +100,13 @@
                             <input id='phone' type='tel' onblur="removeFocus()">
                         </div>
                     </div>
-                    <div class='form-row'>
-                        <div style='width: 100%;' onclick='giveFocus("email")' class='form-group'>
+                    <div id='email-form' style='height: 45px; margin-bottom: 5px;background-color: white;' class='form-row'>
+                        <div style='width: 100%; ' onclick='giveFocus("email")' class='form-group'>
                             <label for='email' id='label-email'>Email</label>
                             <input id='email' type='email' onblur="removeFocus()">
                         </div>
                     </div>
-                    <div class='quote-button'>
+                    <div id='quote-form-button' class='quote-button'>
                         GET QUOTATION
                     </div>
                     <div class='terms'>
@@ -109,23 +116,290 @@
             </div>
         </div>
         <div id='steps'>
-            <div id='steps=heading'>
-                Sell to LandVigo ad you never have to worry about waiting for a buyer
+            <div id='steps-heading'>
+                Sell to LandVigo and you never have to worry about waiting for a buyer.
             </div>
             <div id='steps-para'>
                 Sell your properties and get paid within 48hrs or buy from our pool of properties. See how it works.
             </div>
+            <div id='steps-row'>
+                <div class='step-item'>
+                    <img src='img/step1.png'>
+                    <step>STEP 1</step>
+                    <p>Meet or call 08127677999 to schedule a meeting quickly</p>
+                </div>
+                <img src='img/arrow.png' class='arrow'>
+                <div class='step-item'>
+                    <img src='img/step2.png'>
+                    <step>STEP 2</step>
+                    <p>Inspection of property. Get offer. Title Verification.</p>
+                </div>
+                <img src='img/arrow.png' class='arrow'>
+                <div class='step-item'>
+                    <img src='img/step3.png'>
+                    <step>STEP 3</step>
+                    <p>Accept offer. Quick payout.</p>
+                </div>
+            </div>
+            <div id='get-started-button'>
+                <p>GET STARTED</p>
+                <i class='material-icons'>chevron_right</i>
+            </div>
+            <div id='partner'>
+                <div class='partner-item'>
+                    <div class='ellipse'>
+                        <i class='material-icons'>list_alt</i>
+                    </div>
+                    <div class='item-text'>
+                        <div class='item-heading'>
+                            Become an investor:
+                        </div>
+                        <div class='item-para'>
+                            Are you interested in investing in landvigo? We have a space for you. Kindly reach us to open a discussion.
+                        </div>
+                        <div class='continue'>
+                            <p>GET STARTED</p>
+                            <i class='material-icons'>chevron_right</i>
+                        </div>
+                    </div>
+                </div>
+                <div class='partner-item'>
+                    <div class='ellipse'>
+                        <i class='material-icons'>people_alt</i>
+                    </div>
+                    <div class='item-text'>
+                        <div class='item-heading'>
+                            Become an partner:
+                        </div>
+                        <div class='item-para'>
+                            Want to partner with landvigo? Let us support you. Contact us for more details.
+                        </div>
+                        <div class='continue'>
+                            <p>GET STARTED</p>
+                            <i class='material-icons'>chevron_right</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='reasons'>
+            <div class='aesthetic-circle' id='circle1'></div>
+            <div class='aesthetic-circle' id='circle2'></div>
+            <div class='aesthetic-circle' id='circle3'></div>
+
+            <div id='reasons-heading'>
+                Here is why you should sell to Landvigo
+            </div>
+            <div id='reason-group'>
+                <div class='reason-items'>
+                    <div class='reason-item'>
+                        <div class='reason-number'>
+                            1
+                        </div>
+                        <div class='reason-text'>
+                            <div class='reason-heading'>
+                                Quick payout
+                            </div>
+                            <div class='reason-para'>
+                                We are here to purchase your property as quickly as possible.
+                            </div>
+                        </div>
+                    </div>
+                    <div class='reason-item'>
+                        <div class='reason-number'>
+                            2
+                        </div>
+                        <div class='reason-text'>
+                            <div class='reason-heading'>
+                                Save money in agency/legal fees
+                            </div>
+                            <div class='reason-para'>
+                                We don't ask for agency or legal fees, you can save good money selling to us.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='reason-items'>
+                    <div class='reason-item'>
+                        <div class='reason-number'>
+                            3
+                        </div>
+                        <div class='reason-text'>
+                            <div class='reason-heading'>
+                                Protect your identity
+                            </div>
+                            <div class='reason-para'>
+                                Sell your property discreetly and preserve your identity.
+                            </div>
+                        </div>
+                    </div>
+                    <div class='reason-item'>
+                        <div class='reason-number'>
+                            4
+                        </div>
+                        <div class='reason-text'>
+                            <div class='reason-heading'>
+                                Save time
+                            </div>
+                            <div class='reason-para'>
+                                Don't let your property languish in the market. most agents inflates the prices of properties without your knowledge/consent.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='testimonials'>
+            <h6>TESTIMONIALS</h6>
+            <h2>See what others are saying</h2>
+            <img src='img/quotes.png'>
+            <div id='testimonials-carousel' class="carousel slide" data-ride="carousel">
+                <i class='material-icons' href="#testimonials-carousel" data-slide="prev">chevron_left</i>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>I sold my property to Landvigo. the transaction was fast and hassle free as soon as I provided them with all they requested for. I recommend Landvigo to anyone who wants to sell his/her property fast.
+                        </p>
+                        <div class='name'>
+                            Ugochukwu Onyedika A.
+                        </div>
+                        <div class='action'>
+                            Sold a home to LandVigo
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p>It was quick, it was painless, and the price offered was exceedingly fair. It alleviated all of the hassles that we would have gone through — listing it, staging it and on and on.
+                        </p>
+                        <div class='name'>
+                            Esther Adewole
+                        </div>
+                        <div class='action'>
+                            Sold a home to LandVigo
+                        </div>
+                    </div>
+                </div>
+                <i class='material-icons' href="#testimonials-carousel" data-slide="next">chevron_right</i>
+            </div>
+        </div>
+        <div id='faqs'>
+            <h6>FAQs</h6>
+            <h2>We've got answers</h2>
+            <div class='question-group'>
+                <div class='question' href="#question1" data-toggle="collapse" onclick="collapseManager('faqIcon1')">
+                    <p>Can I buy property from Landvigo and pay in instalmental?</p>
+                    <i id='faqIcon1' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question1" class="collapsed">
+                    <div class='space'></div>
+                    We are currently working towards accommodating instalment payment option.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question ' href="#question2" aria-expanded="false" data-toggle="collapse" onclick="collapseManager('faqIcon2')">
+                    <p>Can Landvigo help me access mortgage if I want to buy a property from them.</p>
+                    <i id='faqIcon2' class='material-icons'>keyboard_arrow_down</i>
+                </div>
+                <div class='answer collapse hide' id="question2">
+                    <div class='space'></div>
+                    We are currently working towards accommodating instalment payment option.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question3" aria-expanded="false" data-toggle="collapse" onclick="collapseManager('faqIcon3')">
+                    <p>How long will it take to sell my property to landvigo?</p>
+                    <i id='faqIcon3' class='material-icons'>keyboard_arrow_down</i>
+                </div>
+                <div class='answer  collapse hide' id="question3">
+                    <div class='space'></div>
+                    We are currently working towards accommodating instalment payment option.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <h4 onclick="window.location.href = 'faqs.html';">See all FAQs <i class='material-icons'>chevron_right</i></h4>
 
         </div>
     </div>
-    <!-- START OF CONTENT -->
+    <!-- END OF CONTENT -->
 
 
     <!-- START OF FOOTER -->
     <div id='footer'>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                COMPANY
+            </div>
+            <div class="footer-text">
+                About us
+            </div>
+            <div class="footer-text">
+                Become an Investor
+            </div>
+            <div class="footer-text">
+                Our Contacts
+            </div>
+            <div class="footer-text" onclick="window.location.href = 'faqs.html';">
+                FAQs
+            </div>
+        </div>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                PRODUCTS
+            </div>
+            <div class='footer-text'>
+                Buy
+            </div>
+            <div class="footer-text">
+                Sell
+            </div>
+            <div class="footer-text">
+                Sell & Buy Back
+            </div>
+            <div class="footer-text">
+                Become a Partner
+            </div>
+        </div>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                INFORMATION
+            </div>
+            <div class="footer-text">
+                Blog
+            </div>
+            <div class="footer-text">
+                Terms of Use
+            </div>
+            <div class="footer-text" onclick="window.location.href = 'privacy.html';">
+                Privacy Policy
+            </div>
+            <div class="footer-text">
+                Support
+            </div>
+        </div>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                CONTACT
+            </div>
+            <div class='footer-row'>
+                <i class='material-icons'>near_me</i>
+                <div class="footer-text">
+                    110 Ademola Adetokunbo, Wuse 2, Abuja, Nigeria
+                </div>
+            </div>
+            <div class='footer-row'>
+                <i class='material-icons'>call</i>
+                <div class="footer-text">
+                    </p>+234 812 767 7999</p>
+                    </p>+234 803 376 0465</p>
+                </div>
+            </div>
+
+        </div>
 
     </div>
     <!-- START OF FOOTER -->
 </body>
+
+<script src="js/script.js"></script>
 
 </html>

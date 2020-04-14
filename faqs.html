@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/faqs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Home</title>
+</head>
+
+<body>
+
+
+    <!-- START OF HEADER -->
+    <div id='header'>
+        <div id='navbar'>
+            <img style="cursor: pointer;" src='img/logo.png' width="140px" onclick="window.location.href='index.html';">
+            <div class='nav-item ' onclick="window.location.href='index.html'">
+                HOME
+            </div>
+            <div class='nav-item' onclick="window.location.href='deal.html'">
+                DEAL OF DAY
+            </div>
+            <div class='nav-item active'>
+                ABOUT
+            </div>
+            <div class='nav-item'>
+                CONTACT
+            </div>
+        </div>
+        <div id='right-buttons'>
+            <div id='login'>
+                LOGIN
+            </div>
+            <div id='register'>
+                REGISTER
+            </div>
+        </div>
+        <i class='material-icons' id='menu'>menu</i>
+    </div>
+    <!-- END OF HEADER -->
+
+
+    <!-- START OF CONTENT -->
+    <div class='aesthetic-circle' id='circle1'></div>
+    <div class='aesthetic-circle' id='circle2'></div>
+    <div id='content'>
+        <div id='page-header'>
+            Frequently Asked Questions
+            <p>Got questions, we have answers.</p>
+        </div>
+        <div id='faqs'>
+            <div class='question-group'>
+                <div class='question' href="#question1" data-toggle="collapse" onclick="collapseManager('faqIcon1')">
+                    <p>Can I buy property from Landvigo and pay in instalments ?</p>
+                    <i id='faqIcon1' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question1" class="collapsed">
+                    <div class='space'></div>
+                    We are currently working towards accommodating instalment payment option.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question2" data-toggle="collapse" onclick="collapseManager('faqIcon2')">
+                    <p>
+                        Can Landvigo help me access mortgage if I want to buy a property from them.
+                    </p>
+                    <i id='faqIcon2' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question2" class="collapsed">
+                    <div class='space'></div>
+                    We can introduce you to our mortgage bank partners.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question3" data-toggle="collapse" onclick="collapseManager('faqIcon3')">
+                    <p>
+                        How long will it take to sell my property to landvigo?
+                    </p>
+                    <i id='faqIcon3' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question3" class="collapsed">
+                    <div class='space'></div>
+                    We can close on a transaction within 48hrs, once all required documents are provided.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question4" data-toggle="collapse" onclick="collapseManager('faqIcon4')">
+                    <p>
+                        Do I need to pay Landvigo any other fee if i am buying or selling properties to you?
+                    </p>
+                    <i id='faqIcon4' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question4" class="collapsed">
+                    <div class='space'></div>
+                    we will never request for any fee whether you are selling to us or buying from us.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question5" data-toggle="collapse" onclick="collapseManager('faqIcon5')">
+                    <p>
+                        How long can I take to respond to landvigo's offer?
+                    </p>
+                    <i id='faqIcon5' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question5" class="collapsed">
+                    <div class='space'></div>
+                    our offer when we are buying is valid for 48hrs, while our offer when we are selling is valid for 24hrs.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question6" data-toggle="collapse" onclick="collapseManager('faqIcon6')">
+                    <p>
+                        I want to sell my property to Landvigo, but I already used it to borrow money from the bank, what should I do?
+                    </p>
+                    <i id='faqIcon6' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question6" class="collapsed">
+                    <div class='space'></div>
+                    we can take the hassle from you as long as we've both agreed in writing to deal.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question7" data-toggle="collapse" onclick="collapseManager('faqIcon7')">
+                    <p>
+                        How do I know that my informations are not divulged to a 3rd party?
+                    </p>
+                    <i id='faqIcon7' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question7" class="collapsed">
+                    <div class='space'></div>
+                    we take pride in keeping clients data as private as possible.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question8" data-toggle="collapse" onclick="collapseManager('faqIcon8')">
+                    <p>
+                        Can I sell my property in abuja to Landvigo even though I don't live in abuja or nigeria?
+                    </p>
+                    <i id='faqIcon8' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question8" class="collapsed">
+                    <div class='space'></div>
+                    we can liaise with a proxy to a certain stage before we request for the presence of the owner of the property. however, the owner must equip the proxy with a signed letter of instruction and attach a coloured copy of the data page of his/her international
+                    passport.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question9" data-toggle="collapse" onclick="collapseManager('faqIcon9')">
+                    <p>
+                        Can I mandate my realtor/attorney to sell my property to landvigo on my behalf?
+                    </p>
+                    <i id='faqIcon9' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question9" class="collapsed">
+                    <div class='space'></div>
+                    we only transact on a property the owner is present at the time.
+                    <div class='space'></div>
+                </div>
+            </div>
+            <div class='question-group'>
+                <div class='question' href="#question10" data-toggle="collapse" onclick="collapseManager('faqIcon10')">
+                    <p>
+                        Is it safe to buy property from Landvigo without doing a legal search?
+                    </p>
+                    <i id='faqIcon10' class='material-icons'>keyboard_arrow_up</i>
+                </div>
+                <div class='answer  collapse show' id="question10" class="collapsed">
+                    <div class='space'></div>
+                    one of our key strengths is buying encumbrance free titles. it is very safe.
+                    <div class='space'></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- END OF CONTENT -->
+
+
+    <!-- START OF FOOTER -->
+    <div id='footer'>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                COMPANY
+            </div>
+            <div class="footer-text">
+                About us
+            </div>
+            <div class="footer-text">
+                Become an Investor
+            </div>
+            <div class="footer-text">
+                Our Contacts
+            </div>
+            <div class="footer-text" onclick="window.location.href = 'faqs.html';">
+                FAQs
+            </div>
+        </div>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                PRODUCTS
+            </div>
+            <div class='footer-text'>
+                Buy
+            </div>
+            <div class="footer-text">
+                Sell
+            </div>
+            <div class="footer-text">
+                Sell & Buy Back
+            </div>
+            <div class="footer-text">
+                Become a Partner
+            </div>
+        </div>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                INFORMATION
+            </div>
+            <div class="footer-text">
+                Blog
+            </div>
+            <div class="footer-text">
+                Terms of Use
+            </div>
+            <div class="footer-text">
+                Privacy Policy
+            </div>
+            <div class="footer-text">
+                Support
+            </div>
+        </div>
+        <div class='footer-group'>
+            <div class='footer-heading'>
+                CONTACT
+            </div>
+            <div class='footer-row'>
+                <i class='material-icons'>near_me</i>
+                <div class="footer-text">
+                    110 Ademola Adetokunbo, Wuse 2, Abuja, Nigeria
+                </div>
+            </div>
+            <div class='footer-row'>
+                <i class='material-icons'>call</i>
+                <div class="footer-text">
+                    </p>+234 812 767 7999</p>
+                    </p>+234 803 376 0465</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- START OF FOOTER -->
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

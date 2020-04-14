@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "Rubik";
+    src: url('../fonts/Rubik.ttf');
+}
+
+@font-face {
+    font-family: "Publico";
+    src: url('../fonts/Publico.ttf');
+}
+
+* {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/*
+            
+            START OF HEADER 
+            
+            */
+
+ :root {
+    --padding: 5px 50px;
+}
+
+#header {
+    width: 100%;
+    height: max-content;
+    background-color: #FFF;
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: +5;
+}
+
+#header #navbar {
+    display: flex;
+    align-items: center;
+}
+
+#header #navbar img {
+    margin-right: 80px;
+}
+
+#header #navbar .nav-item {
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4D4F;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+#header #navbar .active {
+    color: #323BD3;
+}
+
+#header #right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#header #right-buttons #login {
+    margin-right: 40px;
+    color: #DC6814;
+    cursor: pointer;
+}
+
+#header #right-buttons #login:hover {
+    color: #F3862A;
+}
+
+#header #right-buttons #register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    background-color: #F17419;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#header #right-buttons #register:hover {
+    background-color: #F3862A;
+}
+
+#header #menu {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #202020;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #header #navbar img {
+        margin-right: 15px
+    }
+    #header #navbar .nav-item {
+        margin: 0px 7px;
+    }
+}
+
+@media (max-width: 825px) {
+     :root {
+        --padding: 5px 25px;
+    }
+}
+
+@media (max-width: 825px) {
+    #header {
+        background-color: transparent;
+        position: absolute;
+    }
+    #header #navbar .nav-item {
+        display: none;
+    }
+    #header #right-buttons {
+        display: none;
+    }
+    #header #navbar img {
+        width: 15vw;
+        min-width: 90px;
+    }
+    #header #menu {
+        display: flex;
+    }
+}
+
+
+/*
+            
+            END OF HEADER 
+            
+            */
+
+.aesthetic-circle {
+    position: absolute;
+    z-index: -1;
+    width: 28vw;
+    max-width: 300px;
+    min-width: 160px;
+    height: 28vw;
+    max-height: 300px;
+    min-height: 160px;
+    border: 2px solid #17AAEB;
+    background-color: transparent;
+    opacity: 0.2;
+}
+
+#circle1 {
+    width: 14vw;
+    max-width: 150px;
+    min-width: 80px;
+    height: 28vw;
+    max-height: 300px;
+    min-height: 160px;
+    top: 100px;
+    right: 0px;
+    border-right: none;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+#circle2 {
+    top: 150px;
+    left: -70px;
+    border-radius: 150px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px;
+}
+
+#content #page-header {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    max-height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #2D354C;
+}
+
+#content #page-header p {
+    font-size: 16px;
+    line-height: 18%;
+    margin-top: 15px;
+    text-align: center;
+    color: #2D354C;
+}
+
+#content #faqs {
+    width: 95%;
+    max-width: 750px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin: 0px auto;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+#content #faqs .question-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#content #faqs .question-group .question {
+    background-color: #FAFAFA;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #2D3136;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#content #faqs .question-group .question p {
+    margin: 0px;
+}
+
+#content #faqs .question-group .answer {
+    margin-top: 2px;
+    background-color: #FFF;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2D3136;
+    padding: 0px 15px;
+}
+
+#content #faqs .question-group .space {
+    height: 15px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #content #page-header {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    #content #faqs .question-group .question {
+        font-size: 14.5px;
+        padding: 7px;
+    }
+    #content #faqs .question-group .space {
+        height: 7px;
+    }
+    #content #faqs .question-group .answer {
+        font-size: 12.5px;
+        padding: 0px 7px;
+    }
+}
+
+
+/* 
+            
+            this is the footer
+            
+             */
+
+#footer {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 75px 0px;
+    flex-wrap: wrap;
+}
+
+#footer .footer-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 20%;
+}
+
+#footer .footer-group .footer-heading {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.14286px;
+    font-weight: 700;
+    color: #254AB7;
+    margin-bottom: 17px;
+}
+
+#footer .footer-group .footer-row {
+    display: flex;
+    align-items: start;
+    margin-bottom: 5px;
+}
+
+#footer .footer-group .footer-text {
+    font-size: 15px;
+    line-height: 19px;
+    color: #5B5B5B;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+#footer .footer-group .footer-text p {
+    margin: 0px;
+}
+
+#footer .footer-group .footer-row i {
+    font-size: 15px;
+    line-height: 19px;
+    color: #5B5B5B;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+@media (max-width: 740px) {
+    #footer .footer-group {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        width: 45%;
+    }
+    #footer .footer-group .footer-heading {
+        margin-top: 20px;
+    }
+}
