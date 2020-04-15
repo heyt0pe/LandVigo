@@ -19,17 +19,17 @@
     <!-- START OF HEADER -->
     <div id='header'>
         <div id='navbar'>
-            <img style="cursor: pointer;" src='img/logo.png' width="140px" onclick="window.location.href='index.html';">
-            <div class='nav-item ' onclick="window.location.href='index.html'">
+            <img style="cursor: pointer;" src='img/logo.jpg' width="140px" onclick="window.location.href='index.html';">
+            <div class='nav-item' onclick="window.location.href='index.html'">
                 HOME
             </div>
             <div class='nav-item' onclick="window.location.href='deal.html'">
                 DEAL OF DAY
             </div>
-            <div class='nav-item active'>
+            <div class='nav-item active' onclick="window.location.href='about.html'">
                 ABOUT
             </div>
-            <div class='nav-item'>
+            <div class='nav-item' onclick="window.location.href='contact.html'">
                 CONTACT
             </div>
         </div>
@@ -41,7 +41,7 @@
                 REGISTER
             </div>
         </div>
-        <i class='material-icons' id='menu'>menu</i>
+        <i onclick='openMenu()' class='material-icons' id='menu'>menu</i>
     </div>
     <!-- END OF HEADER -->
 
@@ -197,7 +197,7 @@
             <div class='footer-heading'>
                 COMPANY
             </div>
-            <div class="footer-text">
+            <div class="footer-text" onclick='window.location.href="about.html"'>
                 About us
             </div>
             <div class="footer-text">
@@ -251,23 +251,52 @@
             <div class='footer-row'>
                 <i class='material-icons'>near_me</i>
                 <div class="footer-text">
-                    110 Ademola Adetokunbo, Wuse 2, Abuja, Nigeria
+                    110 Ademola Adetokunbo cresent, Wuse 2, Abuja, Nigeria
                 </div>
             </div>
             <div class='footer-row'>
                 <i class='material-icons'>call</i>
                 <div class="footer-text">
-                    </p>+234 812 767 7999</p>
-                    </p>+234 803 376 0465</p>
+                    <p><a href='tel: [+2348127677999]'>+234 812 767 7999</a></p>
+                    <p><a href='tel: [+2348033760465]'>+234 803 376 0465</a></p>
                 </div>
             </div>
 
         </div>
 
     </div>
-    <!-- START OF FOOTER -->
+    <!-- END OF FOOTER -->
+
+
+    <!-- START OF MENU MODAL -->
+    <div id='modal'>
+        <div id='modal-content'>
+            <i onclick='closeMenu()' id='close-btn' class='material-icons' style="margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+            <div onclick='window.location.href="index.html";' class='menu-section '>
+                <h2>HOME</h2>
+            </div>
+            <div onclick='window.location.href="deal.html";' class='menu-section'>
+                <h2>DEAL OF THE DAY</h2>
+            </div>
+            <div onclick='window.location.href="about.html";' class='menu-section active'>
+                <h2>ABOUT</h2>
+            </div>
+            <div onclick='window.location.href="contact.html";' class='menu-section'>
+                <h2>CONTACT</h2>
+            </div>
+            <div id='modal-login' onclick='window.location.href="signin.html";' class='menu-section'>
+                <h2>LOGIN</h2>
+            </div>
+            <div id='modal-register' onclick='window.location.href="signup.html";' class='menu-section'>
+                <h2>REGISTER</h2>
+            </div>
+
+        </div>
+    </div>
+    <!-- END OF MENU MODAL -->
+
 </body>
 
-<script src="js/script.js"></script>
+<script src="js/script.js "></script>
 
 </html>

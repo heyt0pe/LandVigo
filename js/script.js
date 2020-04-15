@@ -47,3 +47,19 @@ responsive = function() {
 window.addEventListener("resize", function() {
     responsive();
 })
+
+function openMenu() {
+    modal = document.getElementById('modal');
+    modal.style.display = 'block';
+}
+
+function closeMenu() {
+    document.getElementById('menu').innerText = 'menu';
+    modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}

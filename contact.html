@@ -8,9 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/privacy.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Privacy Policy</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -26,10 +26,10 @@
             <div class='nav-item' onclick="window.location.href='deal.html'">
                 DEAL OF DAY
             </div>
-            <div class='nav-item active' onclick="window.location.href='about.html'">
+            <div class='nav-item' onclick="window.location.href='about.html'">
                 ABOUT
             </div>
-            <div class='nav-item' onclick="window.location.href='contact.html'">
+            <div class='nav-item active' onclick="window.location.href='contact.html'">
                 CONTACT
             </div>
         </div>
@@ -51,37 +51,42 @@
     <div class='aesthetic-circle' id='circle2'></div>
     <div id='content'>
         <div id='page-header'>
-            Privacy Policy
+            Get in touch with LandVigo
+            <p>We take our commitment to our users seriously. If you need our help with your user account, have questions about how to use our platform or experiencing technical difficulties, please do contact us without hesitating.</p>
         </div>
-        <div id='privacy-text'>
-            <div class='privacy-para'>
-                Your privacy is important to us. It is Landvigo's policy to respect your privacy regarding any information we may collect from you across our website, http://landvigo.com, and other sites we own and operate.
+        <div id='contact-bg'>
+            <div id='contact-form'>
+                <div class='contact-col'>
+                    <label for='fullname'>Full Name</label>
+                    <input type='text' placeholder='John Doe' id='fullname'>
+                    <label for='email'>Email</label>
+                    <input type='email' placeholder='you@example.com' id='email'>
+                    <label for='message'>Your message</label>
+                    <textarea placeholder='Your message' id='message'></textarea>
+                    <div id='sub-btn'>SUBMIT</div>
+                </div>
+                <div class='contact-col'>
+                    <label>General communication</label>
+                    <label>
+                        <a href='mailto: info@landvigo.com'>For general queries, including partnership opportunities, please email info@landvigo.com</a>
+                    </label>
+                    <label>Come visit</label>
+                    <label>
+                        <p>LandVigo, 110 Ademola Adetokunbo cresent, Wuse 2, Abuja, Nigeria.</p>
+                    </label>
+                    <label>Give us a call</label>
+                    <label>
+                        <a href='tel: [+2348127677999]' style=" margin-bottom:5px;">+234 812 767 7999</a>
+                    <a href='tel: [+2348033760465]'>+234 803 376 0465</a>
+                    </label>
+                    <label>We are social</label>
+                    <div id='social'>
+                        <img src="img/facebook.png">
+                        <img src="img/twitter-blue.png">
+                        <img src="img/instagram.png">
+                    </div>
+                </div>
             </div>
-            <div class='privacy-para'>
-                We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.
-            </div>
-            <div class='privacy-para'>
-                We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying,
-                use or modification.
-            </div>
-            <div class='privacy-para'>
-                We don’t share any personally identifying information publicly or with third-parties, except when required to by law.
-            </div>
-            <div class='privacy-para'>
-                Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.
-            </div>
-            <div class='privacy-para'>
-                You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.
-            </div>
-            <div class='privacy-para'>
-                Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.
-            </div>
-            <div class='privacy-para'>
-                This policy is effective as of 2 April 2020.
-            </div>
-
-
-
         </div>
     </div>
     <!-- END OF CONTENT -->
@@ -167,16 +172,16 @@
     <div id='modal'>
         <div id='modal-content'>
             <i onclick='closeMenu()' id='close-btn' class='material-icons' style="margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
-            <div onclick='window.location.href="index.html";' class='menu-section '>
+            <div onclick='window.location.href="index.html";' class='menu-section'>
                 <h2>HOME</h2>
             </div>
             <div onclick='window.location.href="deal.html";' class='menu-section'>
                 <h2>DEAL OF THE DAY</h2>
             </div>
-            <div onclick='window.location.href="about.html";' class='menu-section active'>
+            <div onclick='window.location.href="about.html";' class='menu-section'>
                 <h2>ABOUT</h2>
             </div>
-            <div onclick='window.location.href="contact.html";' class='menu-section'>
+            <div onclick='window.location.href="contact.html";' class='menu-section active'>
                 <h2>CONTACT</h2>
             </div>
             <div id='modal-login' onclick='window.location.href="signin.html";' class='menu-section'>
