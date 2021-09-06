@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Rubik";
-    src: url('../fonts/Rubik.ttf');
+    src: url('../assets/fonts/Rubik.ttf');
 }
 
 @font-face {
     font-family: "Publico";
-    src: url('../fonts/Publico.ttf');
+    src: url('../assets/fonts/Publico.ttf');
 }
 
 * {
@@ -165,7 +165,7 @@ body {
     height: 320px;
     position: relative;
     max-height: 320px;
-    background-image: url('../img/about.jpg');
+    background-image: url('../assets/images/about.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;

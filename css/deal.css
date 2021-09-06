@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Rubik";
-    src: url('../fonts/Rubik.ttf');
+    src: url('../assets/fonts/Rubik.ttf');
 }
 
 @font-face {
     font-family: "Publico";
-    src: url('../fonts/Publico.ttf');
+    src: url('../assets/fonts/Publico.ttf');
 }
 
 * {
@@ -199,7 +199,7 @@ body {
     height: 270px;
     position: relative;
     max-height: 270px;
-    background-image: url('../img/deal.jpg');
+    background-image: url('../assets/images/deal.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;

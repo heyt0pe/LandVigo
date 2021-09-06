@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Rubik";
-    src: url('../fonts/Rubik.ttf');
+    src: url('../assets/fonts/Rubik.ttf');
 }
 
 @font-face {
     font-family: "Publico";
-    src: url('../fonts/Publico.ttf');
+    src: url('../assets/fonts/Publico.ttf');
 }
 
 * {
